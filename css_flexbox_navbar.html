@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox Navbar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
+        grid-template-columns: 1fr;
+        min-height: 100vh; /* Full viewport height */
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 15px 20px;
+      }
+
+      .navbar {
+        display: flex;
+        gap: 20px;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+      }
+
+      .navbar a:hover {
+        background-color: #555;
+        border-radius: 5px;
+      }
+
+      .main-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr; /* Sidebar (1) | Main Content (3) */
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .sidebar {
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .content {
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #222;
+        color: white;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <!-- Header Section -->
+      <header class="header">
+        <h1>Logo</h1>
+        <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <!-- Main Layout -->
+      <div class="main-container">
+        <aside class="sidebar">
+          <h2>Sidebar</h2>
+          <p>Navigation or ads</p>
+        </aside>
+
+        <main class="content">
+          <h2>Welcome to My Website</h2>
+          <p>This is a sample website using CSS Grid & Flexbox.</p>
+        </main>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <p>© 2024 My Website</p>
+      </footer>
+    </body>
+  </body>
+</html>

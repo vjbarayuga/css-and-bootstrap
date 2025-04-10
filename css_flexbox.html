@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox Mastery</title>
+    <style>
+      /* justify-content - horizontal alignment - main left to right */
+      /* align-item - vertical alignment - cross axis top to bottom */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row; /* Items align in a row (main axis: horizontal) */
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Try flex-start, flex-end, baseline */
+        background-color: #f1f1f1;
+        padding: 10px;
+        border: 2px solid black;
+        height: 200px; /* Ensures enough vertical space */
+      }
+
+      .box {
+        width: 100px;
+        height: 50px; /* Giving boxes a fixed height allows alignment to be visible */
+        background-color: skyblue;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        margin: 5px;
+        line-height: 50px; /* Centers text inside box */
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </body>
+  </body>
+</html>
